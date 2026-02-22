@@ -1,0 +1,17 @@
+{
+  "name": "cross-chain-bridge-examples",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lock-mint": "bun run canonical-bridge/simulate-lock-mint.ts",
+    "burn-mint": "bun run cctp/simulate-burn-mint.ts",
+    "oft-transfer": "bun run usdt0-oft/simulate-oft-transfer.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.11",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
